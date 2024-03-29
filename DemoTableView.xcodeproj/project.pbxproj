@@ -16,6 +16,9 @@
 		2D148FA72BA7DCCD0059A287 /* DemoTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D148FA62BA7DCCD0059A287 /* DemoTableViewTests.swift */; };
 		2D148FB12BA7DCCD0059A287 /* DemoTableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D148FB02BA7DCCD0059A287 /* DemoTableViewUITests.swift */; };
 		2D148FB32BA7DCCD0059A287 /* DemoTableViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D148FB22BA7DCCD0059A287 /* DemoTableViewUITestsLaunchTests.swift */; };
+		2D148FC02BA8133B0059A287 /* StoryboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D148FBF2BA8133B0059A287 /* StoryboardTableViewController.swift */; };
+		2D148FC22BA813F20059A287 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D148FC12BA813F20059A287 /* TableViewController.swift */; };
+		2D148FC52BA8240F0059A287 /* StoryboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D148FC42BA8240F0059A287 /* StoryboardTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		2D148FAC2BA7DCCD0059A287 /* DemoTableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D148FB02BA7DCCD0059A287 /* DemoTableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTableViewUITests.swift; sourceTree = "<group>"; };
 		2D148FB22BA7DCCD0059A287 /* DemoTableViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTableViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2D148FBF2BA8133B0059A287 /* StoryboardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardTableViewController.swift; sourceTree = "<group>"; };
+		2D148FC12BA813F20059A287 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		2D148FC42BA8240F0059A287 /* StoryboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,7 @@
 				2D148F8D2BA7DCCC0059A287 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		2D148F8D2BA7DCCC0059A287 /* Products */ = {
 			isa = PBXGroup;
@@ -99,9 +106,12 @@
 		2D148F8E2BA7DCCC0059A287 /* DemoTableView */ = {
 			isa = PBXGroup;
 			children = (
+				2D148FC32BA823F20059A287 /* Storyboard */,
 				2D148F8F2BA7DCCC0059A287 /* AppDelegate.swift */,
 				2D148F912BA7DCCC0059A287 /* SceneDelegate.swift */,
 				2D148F932BA7DCCC0059A287 /* ViewController.swift */,
+				2D148FBF2BA8133B0059A287 /* StoryboardTableViewController.swift */,
+				2D148FC12BA813F20059A287 /* TableViewController.swift */,
 				2D148F952BA7DCCC0059A287 /* Main.storyboard */,
 				2D148F982BA7DCCD0059A287 /* Assets.xcassets */,
 				2D148F9A2BA7DCCD0059A287 /* LaunchScreen.storyboard */,
@@ -125,6 +135,14 @@
 				2D148FB22BA7DCCD0059A287 /* DemoTableViewUITestsLaunchTests.swift */,
 			);
 			path = DemoTableViewUITests;
+			sourceTree = "<group>";
+		};
+		2D148FC32BA823F20059A287 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				2D148FC42BA8240F0059A287 /* StoryboardTableViewCell.swift */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D148FC52BA8240F0059A287 /* StoryboardTableViewCell.swift in Sources */,
 				2D148F942BA7DCCC0059A287 /* ViewController.swift in Sources */,
 				2D148F902BA7DCCC0059A287 /* AppDelegate.swift in Sources */,
+				2D148FC02BA8133B0059A287 /* StoryboardTableViewController.swift in Sources */,
+				2D148FC22BA813F20059A287 /* TableViewController.swift in Sources */,
 				2D148F922BA7DCCC0059A287 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,6 +463,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DemoTableView/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -469,6 +491,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DemoTableView/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
